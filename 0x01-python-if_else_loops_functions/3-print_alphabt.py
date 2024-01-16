@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Prints the ASCII alpabet, in lowercase except 'q' and 'e', not followed by a new line"""
+"""Prints the ASCII alpabet, in lowercase except 'q' and 'e', not followed by a new line."""
 
 for char in range(97, 122):
     if chr(char) != 'q' and chr(char) != 'e':
