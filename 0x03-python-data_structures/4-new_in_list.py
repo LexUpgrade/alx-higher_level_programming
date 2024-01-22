@@ -15,12 +15,12 @@ def new_in_list(my_list, idx, element):
 
     count = len(my_list) - 1
     if idx < 0 or idx > count:
-        return None
+        return my_list
     else:
         new_list = [0 for i in range(len(my_list))]
         for i in range(len(my_list)):
             if i == idx:
-                new_list[i] = element
+                new_list[idx] = element
             else:
                 new_list[i] = my_list[i]
         return (new_list)
