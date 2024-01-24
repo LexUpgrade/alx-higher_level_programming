@@ -10,9 +10,10 @@ def uniq_add(my_list=[]):
     """
     from functools import reduce
 
+    sum_up = 0
     new_list = []
     for i in my_list:
         if i not in new_list:
+            sum_up += i
             new_list.append(i)
-    sum_up = reduce(lambda x, y: x + y, new_list)
     return sum_up
