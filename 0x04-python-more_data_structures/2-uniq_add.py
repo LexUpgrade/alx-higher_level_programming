@@ -8,7 +8,6 @@ def uniq_add(my_list=[]):
     Returns:
         Sum of all unique numbers in my_list.
     """
-    from functools import reduce
 
     sum_up = 0
     new_list = []
