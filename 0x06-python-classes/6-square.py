@@ -10,7 +10,9 @@ class Square:
 
         Args:
             size (int): The size of the new square.
+            position (int, int); Position of the new square.
         """
+
         self.size = size
         self.position = position
 
@@ -32,15 +34,19 @@ class Square:
 
     @property
     def position(self):
+        """Returns an attributes."""
+
         return self.__position
 
     @position.setter
     def position(self, value):
+        """Sets attributes."""
+
         if (not isinstance(value, tuple) or
                 len(value) != 2 or
-                all(not isinstance(num, int) for num in value) or
-                all(num < 0 for num in value)):
-            raise TypeError("position must be a tuple of two positive integers")
+                not all(isinstance(num, int) for num in value) or
+                not all(num >= 0 for num in value)):
+            raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
     def area(self):
@@ -53,10 +59,9 @@ class Square:
         if self.__size == 0:
             print()
             return
-        
+
         [print() for i in range(0, self.__position[1])]
         for i in range(0, self.__size):
-            [print(' ', end='') for i in range(0, self.__position[0])]
-            [print('#', end='') for i in range(0, self.__size)]
+            [print(' ', end='') for j in range(0, self.__position[0])]
+            [print('#', end='') for k in range(0, self.__size)]
             print()
-
