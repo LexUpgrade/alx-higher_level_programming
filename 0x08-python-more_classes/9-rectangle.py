@@ -84,7 +84,7 @@ class Rectangle:
         Args:
             size (int): value to set attributes of new Rectangle to.
         """
-        return Rectangle(int(size), int(size))
+        return cls(int(size), int(size))
 
     def __str__(self):
         """Print the rectangle with the character '#'."""
