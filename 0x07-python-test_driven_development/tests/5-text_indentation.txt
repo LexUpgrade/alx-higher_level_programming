@@ -59,7 +59,7 @@ New lines within a string are printed as normal.
 ::
 
     >>> text_indentation("Let's print a new-line! Here goes:\nPrinted.")
-    Lets print a new-line! Here goes:
+    Let's print a new-line! Here goes:
     <BLANKLINE>
     <BLANKLINE>
     Printed.
