@@ -47,7 +47,7 @@ This function accepts two arguments ``matrix`` (list of lists of integers/floats
 	>>> matrix = []
 	>>> matrix_divided(matrix, 3)
 	Traceback (most recent call last):
-	TypeError: matrix must be a matrix (list of lists of integers/floats
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 ``matrix_divided(...)``: with a value '0' divisor
 ::
@@ -75,4 +75,4 @@ This function accepts two arguments ``matrix`` (list of lists of integers/floats
 	>>> matrix = [[1, 'two', 3], [4, 5, 'six']]
 	>>> matrix_divided(matrix, 3)
 	Traceback (most recent call last):
-	TypeError: matrix must be a matrix (list of lists of integers/floats
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
