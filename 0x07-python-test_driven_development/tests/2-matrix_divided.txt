@@ -7,7 +7,7 @@ This module defines a division function that divides all int/floats in a list of
 USAGE
 =====
 
-This function accepts two arguments ``matrix`` (list of lists of integers/floats) and ``div`` (a divisor) and create a new matrix to hold the divison of all elements in ``matrix[...]`` in two decimal places and return.
+This function accepts two arguments ``matrix`` (list of lists of integers/floats) and ``div`` (a divisor) and create a new matrix to return the divison of all elements in ``matrix[...]`` in two decimal places.
 
 |*********************|
 |TESTING WITH NUMBERS |
