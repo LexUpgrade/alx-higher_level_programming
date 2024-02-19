@@ -2,6 +2,6 @@
 """Defines an empty class 'BaseGeometry'."""
 
 
-def BaseGeometry:
+class BaseGeometry:
     """An empty class."""
     pass
