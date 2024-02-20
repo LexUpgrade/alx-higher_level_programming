@@ -6,7 +6,7 @@ class Student:
     """A Student class."""
     def __init__(self, first_name, last_name, age):
         """Initializes an instance of Student.
-        
+
         Args:
             first_name (str): The student's first name
             last_name (str): The student's last name
