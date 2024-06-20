@@ -1,18 +1,16 @@
-#!usr/bin/node
+#!/usr/bin/node
 class Rectangle {
   constructor (w, h) {
-    if (w > 0 && h > 0) {
+    if ((w > 0) && (h > 0)) {
       this.width = w;
       this.height = h;
     }
   }
 
   print () {
-    let i = 0;
-    while (i++ < this.height) {
+    for (let i = 0; i < this.height; i++) {
       let r = '';
-      let j = 0;
-      while (j++ < this.width) {
+      for (let j = 0; j < this.width; j++) {
         r += 'X';
       }
       console.log(r);
