@@ -13,7 +13,7 @@ if __name__ == '__main__':
     cursor = db.cursor()
     cursor.execute("""SELECT *
                     FROM states
-                    WHERE name REGEXP ("^N.*")
+                    WHERE name LIKE BINARY ("N%")
                     ORDER BY states.id
                     """)
     states = cursor.fetchall()
