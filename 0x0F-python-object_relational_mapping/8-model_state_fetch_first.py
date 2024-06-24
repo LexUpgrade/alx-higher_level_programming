@@ -6,8 +6,8 @@ from sqlalchemy.orm import sessionmaker
 from sys import argv as av
 
 if __name__ == "__main__":
-    url_db = "mysql+mysqldb://{}:{}@localhost:3306/{}".format(av[1], av[2], av[3])
-    engine = create_engine(url_db)
+    db = "mysql+mysqldb://{}:{}@localhost:3306/{}".format(av[1], av[2], av[3])
+    engine = create_engine(db)
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
