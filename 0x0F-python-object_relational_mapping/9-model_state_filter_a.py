@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Prints the first 'State' object from the database 'hbtn_0e_6_usa'."""
+"""
+    Lists all 'State' object that contain the letter 'a' from the database
+    'hbtn_0e_6_usa'.
+"""
 from model_state import State, Base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
