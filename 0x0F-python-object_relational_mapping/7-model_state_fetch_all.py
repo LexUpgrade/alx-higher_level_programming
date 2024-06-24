@@ -5,7 +5,7 @@ from model_state import State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-url_db = "mysql+mysqldb://{}:{}@localhost/{}".format(av[1], av[2], av[3])
+url_db = "mysql+mysqldb://{}:{}@localhost:3306/{}".format(av[1], av[2], av[3])
 engine = create_engine(url_db)
 Session = sessionmaker(bind=engine)
 session = Session()
