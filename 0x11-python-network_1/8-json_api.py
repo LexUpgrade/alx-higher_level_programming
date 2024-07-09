@@ -19,6 +19,6 @@ if __name__ == "__main__":
         if json_dict == {}:
             print("No result")
         else:
-            print("[{}] {}".format(json_dict['id'], json_dict['name']))
+            print("[{}] {}".format(json_dict["id"], json_dict["name"]))
     except ValueError:
-        print("Not a valis JSON")
+        print("Not a valid JSON")
